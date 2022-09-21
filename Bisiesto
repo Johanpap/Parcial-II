@@ -1,1 +1,67 @@
 
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+class date {
+	private:
+		int day;
+		int month;
+		int years;
+		public:
+		string date;
+		bool Bisiesto;
+		void  IsBisiesto(int);
+		void run();
+		
+		void setDate(int, int, int);
+			int getDay();
+			int getMonth();
+			int getYears();
+};
+
+class Menu
+{
+	int entrada;
+	void iniciarMenu();
+};
+
+void date::setDate(int day, int month, int years) {
+	this->day = day;
+	this->month = month;
+	this->years = years;
+}
+int date::getDay() {
+	return day;
+}
+int date::getMonth() {
+	return month;
+	}
+	int date::getYears() {
+		return years;
+	}
+
+	void Menu::iniciarMenu()
+	{
+		//System()
+		//cout << "Ingresa la edad";
+	}
+
+	if (dia > 31 || dia == 0)
+{
+
+	cout << "El dia es incorrecto";
+
+}
+if (mes > 12 || mes == 0) {
+	cout << "El mes es incorrecto";
+}
+if (dia > 12 && mes == 02 && bisiesto == true) {
+	cout << "El mes de Febrero incorrecto";
+}
+system("pause");
+
+
+int main()
+{
+}
